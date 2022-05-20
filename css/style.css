@@ -1,52 +1,18 @@
-.header .container-fluid {
-  background-color: white;
-  height: 10%;
-  margin-top: auto;
-}
-.header .container-fluid .imgRedonda {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 1px solid black;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
+/* Error: expected ":".
+ *   ,
+ * 1 | $colorgeneral{
+ *   |              ^
+ *   '
+ *   scss\base\_variables.scss 1:14  @import
+ *   scss\style.scss 3:9             root stylesheet */
 
-.main {
-  background-color: rgb(245, 227, 38);
-  width: 100%;
-  height: 10%;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ":".\a   \2577 \a 1 \2502  $colorgeneral{\d\a   \2502               ^\a   \2575 \a   scss\\base\\_variables.scss 1:14  @import\a   scss\\style.scss 3:9             root stylesheet';
 }
-.main .subtitulo {
-  background-color: rgb(245, 227, 38);
-  font-size: 10px;
-  font-family: pacifico;
-  font-display:swap;
-  src: url(latourAete/pacifico.ttf);
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-}
-.main .video {
-  width: 80%;
-  height: 10%;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px black;
-  padding: 30px;
-  margin-top: 10px;
-  padding: 30px;
-}
-@media screen {
-  .main .video {
-    max-width: 360px, 1200px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
