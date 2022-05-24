@@ -1,18 +1,241 @@
-/* Error: expected ":".
- *   ,
- * 1 | $colorgeneral{
- *   |              ^
- *   '
- *   scss\base\_variables.scss 1:14  @import
- *   scss\style.scss 3:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ":".\a   \2577 \a 1 \2502  $colorgeneral{\d\a   \2502               ^\a   \2575 \a   scss\\base\\_variables.scss 1:14  @import\a   scss\\style.scss 3:9             root stylesheet';
+.header .container-fluid {
+  background-color: white;
+  height: 5%;
+  margin-top: auto;
+  position: relative;
 }
+.header .container-fluid .imgRedonda {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.main {
+  background-color: rgb(245, 227, 38);
+  min-height: 150vh;
+  min-width: 100%;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -190px;
+}
+.main .card {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(243, 227, 38);
+  margin-top: 350px;
+}
+.main .card .card-group {
+  width: 60%;
+  height: 30%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-auto-rows: minmax(500px, auto);
+  grid-template-columns: repeat 3, minmax(200px, 1fr);
+  grid-auto-flow: dense;
+}
+.main .card .foto {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  display: inline;
+}
+.main .card .card-body {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  display: inline;
+  font-family: pacifico;
+  src: url(latourAete/pacifico.ttf);
+}
+.main .card .card-foote {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  display: inline;
+}
+.main .card .card-foote .btn-primary {
+  background-color: black;
+  font-family: pacifico;
+  src: url(latourAete/pacifico.ttf);
+}
+.main .titulo {
+  font-family: pacifico;
+  src: url(latourAete/pacifico.ttf);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0;
+  align-items: cente;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 250px;
+  font-size: 35px;
+  position: relative;
+  z-index: 2;
+  padding-top: 350px;
+  color: white;
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px, solid, black;
+  margin-left: 0;
+  margin-right: 0;
+  object-fit: cover;
+  margin-top: -180px;
+  background-color: rgb(245, 227, 38);
+}
+@media screen {
+  .video {
+    max-width: 360px, 1200px;
+  }
+}
+.video .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #1c1c1c;
+  opacity: 0, 5;
+  mix-blend-mode: overlay;
+}
+
+.main_nosotros {
+  width: 50%;
+  height: 50%;
+}
+.main_nosotros .palabras {
+  font-family: pacifico;
+  src: url(latourAete/pacifico.ttf);
+  font-size: xx-large;
+}
+
+.main_contactos {
+  width: 50%;
+  height: 50%;
+}
+.main_contactos .contacto {
+  font-family: pacifico;
+  src: url(latourAete/pacifico.ttf);
+  font-size: xx-large;
+}
+.main_contactos .contacto .cubo {
+  width: 100%;
+  height: 100%;
+}
+
+.main_coleccion {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+  padding: 10px;
+  grid-auto-flow: dense;
+  min-width: 100%;
+  min-width: 100%;
+  background-color: white;
+  margin-top: 200px;
+}
+.main_coleccion .productos {
+  font-family: pacifico;
+  src: url(latourAete/pacifico.ttf);
+  font-size: 80px;
+  margin-top: 80px;
+  margin-left: 150px;
+}
+.main_coleccion .grid-items {
+  display: flex;
+  align-items: center;
+  justify-content: no-repeat;
+  border-radius: 4px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0, 2s;
+}
+.main_coleccion .productos ul {
+  list-style: none;
+}
+.main_coleccion .productos li {
+  display: inline;
+}
+.main_coleccion .grid-items:hover {
+  transform: scale(0, 5, 3);
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 600px) {
+  .main_coleccion .grid-items:hover .wide {
+    grid-row-start: span 3;
+    width: 50%;
+    height: 50%;
+  }
+  .main_coleccion .grid-items:hover .tall {
+    grid-row-start: span 2;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer {
+  background-color: rgb(245, 227, 38);
+  font-family: pacifico;
+  src: url(latourAete/pacifico.ttf);
+  font-size: 10 px;
+  width: 100%;
+  display: flex;
+  display: wrap;
+  margin: 0;
+  margin-top: -100px;
+  padding: 50px;
+}
+.footer .nav-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px;
+}
+.footer .nav-footer .ayuda {
+  font: size 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column: 2;
+}
+.footer .nav-footer .ayuda .ayuda ul {
+  list-style: none;
+}
+.footer .redes {
+  background-color: rgb(245, 227, 38);
+  list-style: none;
+  grid-column-start: 2;
+}
+.footer .redes .redes ul .redes li {
+  display: inline;
+}
+
+/*# sourceMappingURL=style.css.map */
