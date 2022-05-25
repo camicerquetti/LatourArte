@@ -146,60 +146,71 @@
 }
 
 .main_coleccion {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(250px, 1fr));
-  grid-auto-rows: minmax(100px, auto);
-  gap: 20px;
-  padding: 10px;
-  grid-auto-flow: dense;
-  min-width: 100%;
-  min-width: 100%;
-  background-color: white;
-  margin-top: 200px;
+  width: 100%;
+  height: 50%;
+  margin-bottom: -100px;
+  background: linear-gradient(top, red, gold);
 }
 .main_coleccion .productos {
   font-family: pacifico;
   src: url(latourAete/pacifico.ttf);
-  font-size: 80px;
-  margin-top: 80px;
+  font-size: 60px;
+  margin-top: 150px;
   margin-left: 150px;
 }
-.main_coleccion .grid-items {
+
+.grid-container, .main_coleccion {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 10px;
+  padding: 5px;
+  grid-auto-flow: dense;
+  max-width: 100%;
+  max-width: 100%;
+  margin-top: 200px;
+  list-style: none;
+  background-color: white;
+}
+.grid-container .grid-items, .main_coleccion .grid-items {
   display: flex;
   align-items: center;
   justify-content: no-repeat;
   border-radius: 4px;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 95%;
+  max-height: 80%;
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: transform 0, 2s;
 }
-.main_coleccion .productos ul {
+.grid-container .grid-items1, .main_coleccion .grid-items1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.grid-container .grid-items2, .main_coleccion .grid-items2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.grid-container .grid-items3, .main_coleccion .grid-items3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.grid-container .grid-items4, .main_coleccion .grid-items4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.grid-container .productos ul, .main_coleccion .productos ul {
   list-style: none;
 }
-.main_coleccion .productos li {
+.grid-container .productos li, .main_coleccion .productos li {
   display: inline;
 }
-.main_coleccion .grid-items:hover {
+.grid-container .grid-items:hover, .main_coleccion .grid-items:hover {
   transform: scale(0, 5, 3);
   width: 100%;
   height: 100%;
 }
-@media (min-width: 600px) {
-  .main_coleccion .grid-items:hover .wide {
-    grid-row-start: span 3;
-    width: 50%;
-    height: 50%;
-  }
-  .main_coleccion .grid-items:hover .tall {
-    grid-row-start: span 2;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .footer {
   background-color: rgb(245, 227, 38);
   font-family: pacifico;
