@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../fonts/style.css" type="text/css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="shortcut icon" href="LatourArte/marca latourrrr (2).ico" type="marca latourrrr (2)/x-ico">
     <meta name="description" conect="Nos dedicamos a crear obras únicas , vendemos set de mates,cuadro,entre otras obras. Podrás personalizar a gusto cada uno de nuestros productos, o bien elegir alguna de nuestras obras en stock .No te olvides que podes personalar tus productos con las mejores imagenes de tus mascotas,tu club favorito,un grupo musical,hasta lo que imagenes.Pintamos y llenamos tu día a día de muchos colores">
@@ -12,80 +13,78 @@
 </head>
 <body>
     <header class="header">
-       </div>
-          <nav class="navbar navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-              <a class="logo">
-                <img src="../LatourArte/marca latourrrr (2).ico" class="imgRedonda"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Latour Arte</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/html/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="Productos">
-                        <li><a class="dropdown-item" href="/html/ofertasrecomendadas.html">Ofertas Recomendadas </a></li>
-                        <li><a class="dropdown-item active" href="/html/coleccion.html">Colección</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="/html/contactanos.html">Contacto</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="¿que deseas buscar?" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </nav>
+      
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../LatourArte/marca latourrrr (2).ico" class="imgRedonda"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item active" href="../html/coleccion.html">colección</a></li>
+                  <li><a class="dropdown-item" href="../html/ofertasrecomendadas.html">Ofertas Recomendadas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../html/contactanos.html">Contacto</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="¿que deseas buscar?" aria-label="Search">
+              <button class="btn btn-dark" type="submit">buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
            </header>
      
            <main class="main_coleccion">
-        <p class="productos">Productos </p>
+       
           <div class="grid-container"></div>
         
-          
-          <div class="grid-items1"><img  class="grid-items wide"  src="../LatourArte/mates.jpg" >1</div>
-          <div class="grid-items2"><img  class="grid-items wide"  src="../LatourArte/cat.jpg" >2</div>
-        <div class="grid-items3"><img src="../LatourArte/cuadro de perro.jpg" class="grid-items " >3</div>
-        <div class="grid-items1"><img src="../LatourArte/cuadro pug 2.JPG" class="grid-items " >4</div>
-       <div class="grid-items2"><img src="../LatourArte/freddy.jpg"class="grid-items " >6</div>
-        <div class="grid-items3"><img src="../LatourArte/ev.jpg"class="grid-items " >7</div>
-        <div class="grid-items1"><img src="../LatourArte/20210311_163752.jpg "class="grid-items " >7</div>
-        <div class="grid-items4"><img src="../LatourArte/mates personalizados.jpg" class="grid-items " >8</div>
-        <div class="grid-items3"><img src="../LatourArte/KUJICAM_2021-03-01-17-41-37_developed.jpg" class="grid-items" >9</div>
+          <p class="productos">Productos </p>
+          <div class="grid-items1"><img  class="grid-items wide"  src="../LatourArte/mates.jpg" ></div>
+          <div class="grid-items2"><img  class="grid-items wide"  src="../LatourArte/cat.jpg" ></div>
+        <div class="grid-items3"><img src="../LatourArte/cuadro de perro.jpg" class="grid-items " ></div>
+        <div class="grid-items1"><img src="../LatourArte/cuadro pug 2.JPG" class="grid-items " ></div>
+       <div class="grid-items2"><img src="../LatourArte/freddy.jpg"class="grid-items " ></div>
+        <div class="grid-items3"><img src="../LatourArte/ev.jpg"class="grid-items " ></div>
+        <div class="grid-items1"><img src="../LatourArte/20210311_163752.jpg "class="grid-items " ></div>
+        <div class="grid-items4"><img src="../LatourArte/mates personalizados.jpg" class="grid-items " ></div>
+        <div class="grid-items1"><img src="../LatourArte/KUJICAM_2021-03-01-17-41-37_developed.jpg" class="grid-items" ></div>
        
         
     </div>
 </main>
 <footer class="footer">
-<nav class="nav">
-    <div class="redes">
-        <ul>
-        <li><img   src="" alt="instangram" class="instangram"> </li> 
-        <li><img  src=""alt="facebook" class="facebook">   </li>        
-        <li><img src="" alt="whatsapp" class="whatsapp">   </li>             
-        <li><img src="" alt="tarjetas"class="mercadopago">   </li>               
-        <li><img src="" alt="tarjetas" class="visa"></li> 
-        <li><img src="" alt="tarjetas"class="master"></ul> </div>
-        </nav></footer>
+  <!--pie de pagina-->
+  <nav class="footer">
+    <section class="ayuda"> 
+      <ul >
+        <li class="li1">LatourArte</section>
+        
+      <section class="redes">
+        
+          <a href="https://www.instagram.com/latour.arte/?hl=es" class="icon-instagram"></a>
+        <a class="icon-facebook2"></a>
+        <a class="icon-whatsapp"></a>
+        <a class="icon-twitter"></a></section>
+  </nav></footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>

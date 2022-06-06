@@ -1,62 +1,127 @@
 .footer {
-  background-color: rgba(245, 227, 38);
-  font-family: pacifico;
-  src: url(latourAete/pacifico.ttf);
-  font-size: 10 px;
-  width: 100%;
-  display: flex;
-  display: wrap;
-  margin: 0;
-  margin-top: -100px;
-  padding: 50px;
+ width: 100%;
+ height: 20%;
+margin-top: 200px;
+background-color: rgba(243,277,38);
+text-decoration: none;
 
-  .nav-footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 200px;
+.ayuda{
+    font-family: pacifico;
+    src: url(latourAete/pacifico.ttf);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
-
-
-
-
-
-
-
-    .ayuda {
-      font: size 20px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      grid-column-start: 1;
-      grid-column: 2;
-
-
-      .ayuda ul {
-        list-style: none;}
+    
+    .li2{
+    
+        font-size: 15px;
+        list-style:none;
+        margin-bottom: 6px;
+        margin-left:40px ;
 
     }
+    .li1 {
+     margin-right: 60px ;
+        font-size: 25px;
+        list-style: none;
+     
 
-
-
-
-  }
-
-  .redes {
-    background-color: rgba(245, 227, 38);
-    list-style: none;
-    grid-column-start: 2;
-
-    .redes ul {
-      .redes li {
-        display: inline;
-      }
     }
+    
 
 
 
-
-
-  }
 
 }
+.redes{
+   
+ position:fixed;
+ right:0;
+ top:35%;
+ font-size:2.1rem;
+display:flex;
+flex-direction:column;
+align-items:flex-end;
+z-index: 100;
+
+
+
+
+
+}
+ .icon{
+    
+   color: white;
+     text-decoration:none;
+     padding:.7rem;
+     display:flex;
+     transition: all .5s;    
+     
+    
+    }
+    .icon-facebook2{
+color:black;
+text-decoration: none;
+        
+    }
+    
+    .icon-instagram{
+        color:black;
+     text-decoration: none;
+    }
+    .icon-whatsapp{
+        color:black;
+        
+        text-decoration: none;
+    }
+    .icon-twitter{ 
+        color:black;
+    text-decoration: none;
+        }
+ 
+    .icon-instagram:first-child{
+            border-radius: 1rem 0 0 0;
+        }
+         .icon-twitter:last-child{
+            border-radius: 0 0 0 1rem;
+        }
+     
+        .icon-instagram:hover{
+            padding-right:3rem;
+         border-radius: 1rem 0 0 1rem;
+         box-shadow: 0 0 .5rem rgba(0,0,0.42);
+         }
+         .icon-facebook2:hover{
+            padding-right:3rem;
+         border-radius: 1rem 0 0 1rem;
+         box-shadow: 0 0 .5rem rgba(0,0,0.42);
+         }
+         .icon-whatsapp:hover{
+            padding-right:3rem;
+         border-radius: 1rem 0 0 1rem;
+         box-shadow: 0 0 .5rem rgba(0,0,0.42);
+         }
+         .icon-twitter:hover{
+            padding-right:3rem;
+         border-radius: 1rem 0 0 1rem;
+         box-shadow: 0 0 .5rem rgba(0,0,0.42);
+         }
+.ubicacion{
+    font-size: 15px;
+    font-family: pacifico;
+    src: url(latourAete/pacifico.ttf);
+    margin-left:79% ;
+}
+
+    
+
+
+.maps{
+    width:20%;
+    height:10%;
+    margin-top: 5px;
+    margin-left:79%;
+}
+
+     }
