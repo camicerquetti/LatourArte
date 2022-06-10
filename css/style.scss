@@ -21,6 +21,12 @@
   font-family: pacifico;
   src: url(latourAete/pacifico.ttf);
 }
+.header .nav-link {
+  color: black;
+}
+.header .btn {
+  color: white;
+}
 
 .main {
   background-color: white;
@@ -89,7 +95,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   align-items: cente;
   margin-left: 0;
   margin-right: 0;
@@ -141,17 +147,28 @@
 }
 
 .main_contactos {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 70%;
 }
 .main_contactos .contacto {
   font-family: pacifico;
   src: url(latourAete/pacifico.ttf);
-  font-size: xx-large;
+  font-size: x-large;
+  text-align: center;
+  justify-content: center;
 }
-.main_contactos .contacto .cubo {
+.main_contactos .cubo {
+  width: 50%;
+  height: 100%;
+  margin-left: 350px;
+}
+.main_contactos .cubo .caja {
   width: 100%;
   height: 100%;
+  background-color: rgb(243, 227, 38);
+  display: grid;
+  text-align: center;
+  justify-content: center;
 }
 
 .main_coleccion {
@@ -163,27 +180,47 @@
 .main_coleccion .productos {
   font-family: pacifico;
   src: url(latourAete/pacifico.ttf);
-  font-size: 60px;
-  margin-top: 150px;
-  margin-left: 150px;
+  font-size: 50px;
+  margin-top: 5px;
+  margin-right: 70px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  row-gap: 10px;
+}
+@media screen and (max-width: 400px) {
+  .main_coleccion .productos {
+    font-size: 10px;
+  }
 }
 
 .main_ofertas {
-  width: 100%;
+  width: 80%;
   height: 50%;
   margin-bottom: -100px;
+  margin-left: 130px;
+}
+.main_ofertas .arte {
+  font-family: PTSerif-Italic;
+  src: url(latourArte/PTSerif-Italic.ttf);
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.main_ofertas .card-group {
+  font-family: PTSerif-Italic;
+  src: url(latourArte/PTSerif-Italic.ttf);
 }
 
 .grid-container, .main_coleccion {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-auto-rows: minmax(100px, auto);
-  grid-column-gap: 10px;
-  padding: 5px;
+  grid-auto-rows: minmax(50px, auto);
+  grid-column-gap: 15px;
+  padding: 10cpx;
   grid-auto-flow: dense;
   max-width: 100%;
-  max-width: 100%;
-  margin-top: 200px;
+  max-height: 90%;
+  margin-top: 50px;
   list-style: none;
   background-color: white;
 }
@@ -192,7 +229,7 @@
   align-items: center;
   justify-content: no-repeat;
   border-radius: 4px;
-  max-width: 95%;
+  max-width: 100%;
   max-height: 80%;
   object-fit: cover;
   background-position: center;
@@ -239,20 +276,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
 }
-.footer .ayuda .li {
+.footer .ayuda .li2 {
+  font-size: 15px;
   list-style: none;
-  font-size: 20px;
+  margin-bottom: 6px;
+  margin-left: 40px;
 }
 .footer .ayuda .li1 {
-  margin-right: 20px;
-  font-size: 30px;
+  margin-right: 60px;
+  font-size: 25px;
   list-style: none;
 }
 .footer .redes {
-  margin-bottom: 600px;
-  position: relative;
+  position: fixed;
   right: 0;
   top: 35%;
   font-size: 2.1rem;
@@ -309,6 +346,18 @@
   padding-right: 3rem;
   border-radius: 1rem 0 0 1rem;
   box-shadow: 0 0 0.5rem rgb(0, 0, 0);
+}
+.footer .ubicacion {
+  font-size: 15px;
+  font-family: pacifico;
+  src: url(latourAete/pacifico.ttf);
+  margin-left: 79%;
+}
+.footer .maps {
+  width: 20%;
+  height: 10%;
+  margin-top: 5px;
+  margin-left: 79%;
 }
 
 /*# sourceMappingURL=style.scss.map */
