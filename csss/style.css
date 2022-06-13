@@ -12,13 +12,7 @@
   margin-right: auto;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 600px) {
-  .header .navbar .span {
-    color: black;
-  }
-}
-
-.container-fluid {
+.header .container-fluid {
   background-color: white;
   color: black;
   height: 5%;
@@ -27,12 +21,10 @@
   font-family: pacifico;
   src: url(latourArte/pacifico.ttf);
 }
-
-.nav-link {
+.header .nav-link {
   color: black;
 }
-
-.btn {
+.header .btn {
   color: white;
 }
 
@@ -179,14 +171,9 @@
   justify-content: center;
 }
 @media screen and (min-width: 400px) {
-  .main_contactos .cubo .main {
+  .main_contactos .cubo {
     width: 100%;
     height: 70%;
-  }
-  .main_contactos .cubo .caja {
-    width: 50%;
-    height: 50%;
-    background-color: rgb(243, 255, 38);
   }
 }
 .main_contactos .main_coleccion {
@@ -291,7 +278,7 @@
   text-decoration: none;
 }
 @media screen and (min-whidh: 400px) {
-  .footer .footer {
+  .footer {
     width: 100%;
     height: 20%;
     background-color: rgb(243, 255, 38);
@@ -387,4 +374,4 @@
   margin-left: 79%;
 }
 
-/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.css.map */
