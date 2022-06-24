@@ -70,15 +70,48 @@
     <p class="contacto">¡Pintamos con el Alma!</p>
     <h3 class="contacto">Contacto/LatourArte</h3>
     <div class="cubo">
-      <form class="caja">
-        <input type="text" name="nombre" placeholder="nombre">
-        <input type="text" name="Apellido" placeholder="Apellido">
-        <input type="text" name="email" placeholder="email">
-        <input type="text" name="celular" placeholder="celular">
-        <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
-      </form>
-      <input class="button" type="button" value="Enviar" class="boton">
-    </div>
+      <form action="/server/" method="post" class="form-compra">
+        <div class="form-fila">
+           
+            <label for="full-name">Nombre completo</label>
+        
+            <input type="text" id="full-name">
+
+           
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail" placeholder="mail@gmail.com">
+
+           
+            <label for="numeroPedido">Numero de pedido</label>
+            <input type="number" name="numeroPedido" id="numeroPedido" placeholder="#843648">
+
+           
+            <fieldset>
+                <legend>Tipo de compra</legend>
+
+                <input type="radio" name="tienda" id="tienda">
+                <label for="tienda">Tienda</label>
+
+                <input type="radio" name="tiendaOnline" id="tiendaOnline">
+                <label for="tiendaOnline">Tienda online</label>
+            </fieldset>
+
+        
+            <label for="provincias">Provincias</label>
+            <select name="provincias" id="provincias">
+               
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Cordoba">Mendoza</option>
+            </select>
+
+           
+            <label for="form-comentarios">Comentarios</label>
+            <textarea name="form-comentarios" id="form-comentarios" cols="30" rows="10"></textarea>
+
+           
+            <button type="submit">Enviar</button>
+        </div>
   </main>
   <footer class="footer">
     <!--pie de pagina-->
