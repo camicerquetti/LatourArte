@@ -298,7 +298,7 @@
     height:50%;
    margin-bottom: -100px;
    background:white;
-   
+  
     .productos{
         font-family:"pacifico",serif;
           src:url(latourAete/pacifico.ttf);
@@ -310,7 +310,8 @@
         row-gap: 10px;
              
           }
-          @extend.grid-container;
+         
+          @extend .grid-container;
 
           @media screen and (max-width:400px) {
             .productos{
